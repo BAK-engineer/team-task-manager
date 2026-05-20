@@ -27,7 +27,7 @@ const server = http.createServer(app);
 // Configure Socket.io
 const io = new Server(server, {
   cors: {
-    origin: '*', // For development, allow all origins. Can narrow this down in production.
+    origin: '*', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   },
 });
